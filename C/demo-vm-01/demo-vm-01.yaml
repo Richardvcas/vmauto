@@ -1,0 +1,23 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: demo-vm-01
+  namespace: gkp
+  labels:
+    app: vm-automation
+spec:
+  running: false
+  template:
+    metadata:
+      labels:
+        app: vm-automation
+    spec:
+      domain:
+        cpu:
+          cores: 2
+        resources:
+          requests:
+            memory: 4Gi
+  info:
+    hostname: demo-host
+    ip: 10.10.10.25
