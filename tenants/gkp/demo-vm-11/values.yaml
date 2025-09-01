@@ -1,0 +1,17 @@
+# values consumed by your Helm chart
+vmName: demo-vm-11
+vmDescription: ${vmDescription}
+vmNamespace: gkp
+vmArchitecture: ${vmArchitecture}
+vmMachineType: ${vmMachineType}
+vmImageURL: ${vmImageURL}
+
+vmCPUcores: ${vmCPUcores}
+vmCPUsockets: ${vmCPUsockets}
+vmCPUthreads: ${vmCPUthreads}
+vmMemory: ${vmMemory}
+appDiskVolumeSize: ${appDiskVolumeSize}
+rootDiskVolumeSize: ${rootDiskVolumeSize}
+
+# NEW: pass the SSH public key via values
+sshPublicKey: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICInnN6c3Q9Kr+4hazz4B0+OMTRTREXk4N1mUQqpKJX9 vm-demo-vm-11
